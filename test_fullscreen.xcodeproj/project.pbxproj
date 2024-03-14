@@ -13,6 +13,10 @@
 		1175C6EE2BA159A200B1551E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1175C6EC2BA159A200B1551E /* Main.storyboard */; };
 		1175C6F02BA159A300B1551E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1175C6EF2BA159A300B1551E /* Assets.xcassets */; };
 		1175C6F32BA159A300B1551E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1175C6F12BA159A300B1551E /* LaunchScreen.storyboard */; };
+		1175C6FC2BA159E100B1551E /* DailymotionPlayerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1175C6FB2BA159E100B1551E /* DailymotionPlayerSDK */; };
+		1175C6FE2BA159FC00B1551E /* DailymotionPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175C6FD2BA159FC00B1551E /* DailymotionPlayerView.swift */; };
+		1175C7002BA15CA200B1551E /* FullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175C6FF2BA15CA200B1551E /* FullscreenViewController.swift */; };
+		1175C7022BA15CDD00B1551E /* FullscreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1175C7012BA15CDD00B1551E /* FullscreenViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		1175C6EF2BA159A300B1551E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1175C6F22BA159A300B1551E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1175C6F42BA159A300B1551E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1175C6FD2BA159FC00B1551E /* DailymotionPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionPlayerView.swift; sourceTree = "<group>"; };
+		1175C6FF2BA15CA200B1551E /* FullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenViewController.swift; sourceTree = "<group>"; };
+		1175C7012BA15CDD00B1551E /* FullscreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FullscreenViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1175C6FC2BA159E100B1551E /* DailymotionPlayerSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +67,13 @@
 				1175C6E62BA159A200B1551E /* AppDelegate.swift */,
 				1175C6E82BA159A200B1551E /* SceneDelegate.swift */,
 				1175C6EA2BA159A200B1551E /* ViewController.swift */,
+				1175C6FF2BA15CA200B1551E /* FullscreenViewController.swift */,
+				1175C7012BA15CDD00B1551E /* FullscreenViewController.storyboard */,
 				1175C6EC2BA159A200B1551E /* Main.storyboard */,
 				1175C6EF2BA159A300B1551E /* Assets.xcassets */,
 				1175C6F12BA159A300B1551E /* LaunchScreen.storyboard */,
 				1175C6F42BA159A300B1551E /* Info.plist */,
+				1175C6FD2BA159FC00B1551E /* DailymotionPlayerView.swift */,
 			);
 			path = test_fullscreen;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = test_fullscreen;
+			packageProductDependencies = (
+				1175C6FB2BA159E100B1551E /* DailymotionPlayerSDK */,
+			);
 			productName = test_fullscreen;
 			productReference = 1175C6E32BA159A200B1551E /* test_fullscreen.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 1175C6DA2BA159A200B1551E;
+			packageReferences = (
+				1175C6FA2BA159E100B1551E /* XCRemoteSwiftPackageReference "player-sdk-ios" */,
+			);
 			productRefGroup = 1175C6E42BA159A200B1551E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1175C7022BA15CDD00B1551E /* FullscreenViewController.storyboard in Resources */,
 				1175C6F32BA159A300B1551E /* LaunchScreen.storyboard in Resources */,
 				1175C6F02BA159A300B1551E /* Assets.xcassets in Resources */,
 				1175C6EE2BA159A200B1551E /* Main.storyboard in Resources */,
@@ -139,8 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1175C6EB2BA159A200B1551E /* ViewController.swift in Sources */,
+				1175C7002BA15CA200B1551E /* FullscreenViewController.swift in Sources */,
 				1175C6E72BA159A200B1551E /* AppDelegate.swift in Sources */,
 				1175C6E92BA159A200B1551E /* SceneDelegate.swift in Sources */,
+				1175C6FE2BA159FC00B1551E /* DailymotionPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1175C6FA2BA159E100B1551E /* XCRemoteSwiftPackageReference "player-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dailymotion/player-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1175C6FB2BA159E100B1551E /* DailymotionPlayerSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1175C6FA2BA159E100B1551E /* XCRemoteSwiftPackageReference "player-sdk-ios" */;
+			productName = DailymotionPlayerSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1175C6DB2BA159A200B1551E /* Project object */;
 }
